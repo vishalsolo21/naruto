@@ -2,71 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Code Generator</title>
+  <title>Random Code Generator</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
-      background: orange;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url("https://pix1.wapkizfile.info/download/7b5e9da1118fde4e8d1f0d96c9680ee7/raiganjlooters+wapact+com/IMG-20260103-215416-(raiganjlooters.wapact.com).jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      min-width: 320px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: monospace;
     }
 
-    .box {
-      background: #fff;
-      padding: 20px 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      text-align: left;
-    }
-
-    .code {
-      margin-top: 6px;
-      font-weight: bold;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 24px;
-      font-size: 15px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      background: #fff;
-      color: orange;
-      cursor: pointer;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    }
-
-    button:hover {
-      background: #ffe6c7;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="box">
-    NET WEIGHT 28.7 g<br>
-    MRP₹       MRP Rs. 9.00<br>
-    (INCL. OF  USP Rs. 0.31/g<br>
-   ALL TAXS)   26/10/25<br>
-    USE BY     25/05/26<br>
-   LOT NO.     B1025Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06:08<br>
-    <div class="code" id="code">81102X26000000D5</div>
-  </div>
-
-  <button onclick="generateNew()">Generate New</button>
-
-  <script>
-    function generateNew() {
-      const randomDigits = Math.floor(10000 + Math.random() * 90000);
-      document.getElementById("code").textContent =
-        `81102X260${randomDigits}D5`;
-    }
-  </script>
-
-</body>
-</html>
+    .text-cont
