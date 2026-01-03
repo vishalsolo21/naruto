@@ -25,7 +25,7 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       text-align: left;
-      min-width: 220px;
+      min-width: 200px;
       font-weight: bold;
     }
     button {
@@ -58,57 +58,6 @@
       document.getElementById("code").textContent = newCode;
     }
   </script>
-// Inject Font Awesome 6 CSS directly (no CDN)
-const fontAwesomeCSS = `
-@font-face {
-  font-family: 'Font Awesome 6 Brands';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff2') format('woff2'),
-       url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff') format('woff');
-}
-.fa-brands { font-family: 'Font Awesome 6 Brands'; }
-.fa-whatsapp:before { content: "\\f232"; }
-`;
-
-const styleFA = document.createElement("style");
-styleFA.textContent = fontAwesomeCSS;
-document.head.appendChild(styleFA);
-
-// Styles for the floating button
-const style = document.createElement("style");
-style.textContent = `
-.float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 60px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-}
-`;
-document.head.appendChild(style);
-
-// Create anchor
-const link = document.createElement("a");
-link.href = "https://chat.whatsapp.com/LC1QegWVinv1SO8P9GlHmo?mode=hqrc";
-link.className = "float";
-link.target = "_blank";
-
-// Icon
-const icon = document.createElement("i");
-icon.className = "fa-brands fa-whatsapp";
-link.appendChild(icon);
-
-// Add to page
-document.body.appendChild(link);
+<centre><b><h2>Developed By: vishal_solo21</h2></b></centre>
 </body>
 </html>
