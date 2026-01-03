@@ -9,26 +9,54 @@
       padding: 0;
       height: 100%;
     }
-
     body {
       background-image: url("https://pix1.wapkizfile.info/download/7b5e9da1118fde4e8d1f0d96c9680ee7/raiganjlooters+wapact+com/IMG-20260103-215416-(raiganjlooters.wapact.com).jpg");
-      background-size: cover;
-      background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; /* Center the background image */:contentReference[oaicite:1]{index=1}
       font-family: monospace;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
     .content-box {
       background: rgba(255, 255, 255, 0.95);
       padding: 20px 30px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
       min-width: 320px;
-      display: flex;
-      flex-direction: column;
     }
+    button {
+      margin-top: 12px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
 
-    .text-cont
+  <div class="content-box">
+    28.7 g<br>
+    MRP Rs. 9.00<br>
+    USP Rs. 0.31/g<br>
+    26/10/25<br>
+    25/05/26<br>
+    B1025Q2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06:08<br>
+    <span id="code">81102X26000000D5</span>
+    <br><br>
+    <button onclick="generateNew()">Generate New</button>
+  </div>
+
+  <script>
+    function generateNew() {
+      const randomDigits = Math.floor(10000 + Math.random() * 90000);
+      const newCode = `81102X260${randomDigits}D5`;
+      document.getElementById("code").textContent = newCode;
+    }
+  </script>
+
+</body>
+</html>
